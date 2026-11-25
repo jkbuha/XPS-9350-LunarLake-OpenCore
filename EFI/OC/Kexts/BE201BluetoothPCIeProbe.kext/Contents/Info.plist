@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleExecutable</key>
+	<string>BE201BluetoothPCIeProbe</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.jkbuha.BE201BluetoothPCIeProbe</string>
+	<key>CFBundleName</key>
+	<string>BE201BluetoothPCIeProbe</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.16.0</string>
+	<key>CFBundleVersion</key>
+	<string>0.16.0</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>BE201BluetoothPCIeProbe</key>
+		<dict>
+			<key>BE201NativeABIEnabled</key>
+			<true/>
+			<key>CFBundleIdentifier</key>
+			<string>com.jkbuha.BE201BluetoothPCIeProbe</string>
+			<key>IOClass</key>
+			<string>BE201BluetoothPCIeProbe</string>
+			<key>IOMatchCategory</key>
+			<string>BE201BluetoothPCIeProbe</string>
+			<key>IOPCIMatch</key>
+			<string>0xa8768086</string>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+		<key>BE201NativeTransport</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.jkbuha.BE201BluetoothPCIeProbe</string>
+			<key>IOClass</key>
+			<string>BE201NativeTransport</string>
+			<key>IOMatchCategory</key>
+			<string>BE201NativeTransport</string>
+			<key>IOPropertyMatch</key>
+			<dict>
+				<key>BE201NativeABIEnabled</key>
+				<true/>
+			</dict>
+			<key>IOProviderClass</key>
+			<string>BE201BluetoothPCIeProbe</string>
+		</dict>
+	</dict>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>2.9</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>12.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>12.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>12.0.0</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>12.0.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
+</dict>
+</plist>
